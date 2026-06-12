@@ -1,0 +1,14 @@
+<h1>Cursos Gratuitos</h1>
+
+{% for course in courses %}
+    <h3>{{ course.name }}</h3>
+
+    <p>
+        {{ course.description }}
+    </p>
+
+    <a href="{{ course.url }}">
+        Acessar Curso
+    </a>
+
+{% endfor %}
